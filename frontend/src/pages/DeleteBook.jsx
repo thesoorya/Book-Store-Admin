@@ -12,7 +12,7 @@ const DeleteBook = () => {
 
   function handleDeleteBook() {
     setLoading(true)
-    axios.delete(`http://localhost:5000/books/${id}`)
+    axios.delete(`https://bookstore-backend-6ggz.onrender.com/${id}`)
       .then(() => {
         setLoading(false)
         navigate("/")

@@ -14,7 +14,7 @@ const Home = () => {
 
     useEffect(() => {
         setLoading(true) // Renamed setLoader to setLoading
-        axios.get("http://localhost:5000/books")
+        axios.get("https://bookstore-backend-6ggz.onrender.com/books")
             .then((res) => {
                 setBooks(res.data.data)
                 setLoading(false) // Renamed setLoader to setLoading
